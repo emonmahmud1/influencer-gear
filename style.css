@@ -263,6 +263,16 @@ ul>li a img:hover{
         flex-direction: column;
         gap: 20px;
     }
+    .nav-items {
+        /* border: 2px solid tomato; */
+        flex-direction: column;
+        gap: 14px;
+        position:fixed;
+        right: 10px;
+        top: 30px;
+
+    
+    }
 
     .banner {
         flex-direction: column-reverse;
