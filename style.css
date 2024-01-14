@@ -19,7 +19,7 @@
     border-radius: 41px;
     border: none;
     background: #E02C6D;
-    padding: 10px 20px;
+    padding: 10px 20px 0px;
     color: #FFF;
     font-size: 1rem;
     font-weight: 700;
@@ -38,11 +38,13 @@ nav {
     align-items: center;
     margin-bottom: 50px;
 }
-ul li{
+
+ul li {
     list-style: none;
 
 }
-ul >li a {
+
+ul>li a {
     text-decoration: none;
 }
 
@@ -117,10 +119,9 @@ ul >li a {
 /* popular section */
 .popular-section {
     /* border: 2px solid gray; */
-    width:72%;
+    width: 72%;
     max-width: 1050;
     margin: 100px auto;
-    /* text-align: center; */
 }
 
 .popular-section .popular-title {
@@ -166,7 +167,7 @@ ul >li a {
     font-size: 24px;
     font-weight: 400;
     line-height: 150%;
-    
+
 }
 
 .card .card-description {
@@ -181,16 +182,70 @@ ul >li a {
     box-shadow: none;
 }
 
+.btn-see-more {
+    /* border: 2px solid ; */
+    text-align: end;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.btn-see-more a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    margin-right: 30px;
+
+}
+
+/* feature-section */
+.feature-section {
+    /* border: 2px solid ; */
+    /* width: 77%; */
+    max-width: 1110px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.feature {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+
+.feature-text * {
+    margin-bottom: 16px;
+}
+
+.feature-text .feature-title {
+    color: #0A0826;
+    font-size: 2.37rem;
+    font-weight: 700;
+}
+
+
+.feature-text .join-now-btn {
+    border-radius: 0;
+}
+
+/* .feature .feature-image,
+.feature-text {
+    border: 2px solid red;
+} */
+
 
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
     header {
         margin: auto 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
         gap: 20px;
     }
+
     .banner {
         flex-direction: column-reverse;
         text-align: center;
@@ -199,13 +254,31 @@ ul >li a {
     .banner-text .banner-title {
         font-size: 1.70rem;
     }
-    .popular-section{
+
+    .popular-section {
         width: 90%;
     }
 
     .card-container {
         grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    .feature {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .feature .feature-image img {
+        width: 100%;
+    }
+
+    .feature-text {
+        text-align: center;
+    }
+
+    .feature-text .feature-title {
+        font-size: 1.5rem;
     }
 }
 
