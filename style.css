@@ -24,6 +24,16 @@
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
+    transition: background .5s, color .5s ease-in-out;
+
+}
+.btn-primary:hover{
+    background: #f6eff1;
+    color: #E02C6D;
+    /* border: 1px solid #E02C6D; */
+
+
+
 }
 
 header {
@@ -46,6 +56,14 @@ ul li {
 
 ul>li a {
     text-decoration: none;
+    color: #3A3A3A;
+}
+ul>li a:hover {
+    color: #976c6c;
+}
+ul>li a img:hover{
+    color: #976c6c;
+   
 }
 
 .nav-items {
