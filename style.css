@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .paragraph {
@@ -37,11 +38,22 @@ nav {
     align-items: center;
     margin-bottom: 50px;
 }
+ul li{
+    list-style: none;
+
+}
+ul >li a {
+    text-decoration: none;
+}
 
 .nav-items {
     /* border: 2px solid tomato; */
     display: flex;
+    align-items: center;
     gap: 25px;
+    color: #18191F;
+    font-weight: 500;
+    font-size: 1.1rem;
 
 }
 
@@ -84,8 +96,9 @@ nav {
 .banner-image img {
     width: 100%;
 }
+
 /* sponsors */
-.sponsors{
+.sponsors {
     /* border: 2px solid green; */
     display: flex;
     flex-wrap: wrap;
@@ -94,23 +107,109 @@ nav {
     gap: 20px;
 }
 
-.sponsor-hr{
+.sponsor-hr {
     border: 1px solid rgba(28, 31, 34, 0.1);
     max-width: 95%;
     margin: auto;
 }
 
+/* main */
+/* popular section */
+.popular-section {
+    /* border: 2px solid gray; */
+    width:72%;
+    max-width: 1050;
+    margin: 100px auto;
+    /* text-align: center; */
+}
+
+.popular-section .popular-title {
+    text-align: center;
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* border: 2px solid green; */
+}
+
+.card {
+    /* border: 2px solid greenyellow; */
+    width: 330px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.card .img img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.card .card-title {
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.card .card-price {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    
+}
+
+.card .card-description {
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+    width: 70%;
+}
+
+.card:hover {
+
+    box-shadow: none;
+}
+
+
 /* responsive for mobile devices */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     header {
         margin: auto 20px;
     }
-    .banner {
-       flex-direction: column-reverse;
-       text-align:center;
+    nav{
+        flex-direction: column;
+        gap: 20px;
     }
-    .banner-text .banner-title{
-        font-size: 1.70rem;
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
+    .banner-text .banner-title {
+        font-size: 1.70rem;
+    }
+    .popular-section{
+        width: 90%;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+/* d-none */
+.d-none {
+    display: none;
 }
