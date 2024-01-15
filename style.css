@@ -312,10 +312,9 @@ footer {
         position: fixed;
         right: 10px;
         top: 30px;
-
-
     }
 
+   
     .banner {
         flex-direction: column-reverse;
         text-align: center;
@@ -353,6 +352,3 @@ footer {
 }
 
 /* d-none */
-.d-none {
-    display: none;
-}
